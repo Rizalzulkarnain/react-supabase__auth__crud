@@ -1,0 +1,17 @@
+.register__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.register__password__container {
+  margin-top: 10px;
+}
+
+.register__button {
+  margin-top: 10px;
+}
+
+.register__registerFail {
+  color: red;
+}

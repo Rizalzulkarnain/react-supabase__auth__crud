@@ -1,0 +1,37 @@
+.dashboard__title {
+  text-align: center;
+}
+
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.dashboard__input {
+  margin-bottom: 10px;
+}
+
+.dashboard__button {
+  padding-top: 5px;
+}
+
+.dashboard__listTodo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard__resultTodoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.dashboard__deleteTodo {
+  margin-left: 40px;
+  margin-right: 5px;
+}

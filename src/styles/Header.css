@@ -1,0 +1,17 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__register {
+  margin-left: 15px;
+}
+
+.header__logout {
+  cursor: pointer;
+}

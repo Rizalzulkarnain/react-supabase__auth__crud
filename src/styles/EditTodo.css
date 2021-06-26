@@ -1,0 +1,16 @@
+.editTodo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.editTodo__input {
+  margin-bottom: 10px;
+}
+
+.editTodo__button {
+  display: flex;
+  justify-content: center;
+}
