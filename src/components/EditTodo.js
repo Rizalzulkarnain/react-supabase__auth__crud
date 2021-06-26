@@ -19,7 +19,7 @@ const EditTodo = ({ history }) => {
     if (!editTodo) return;
     const { data } = await supabase
       .from('todo')
-      .select()
+      .select('*')
       .filter('id', 'eq', editTodo)
       .single();
 
@@ -31,13 +31,15 @@ const EditTodo = ({ history }) => {
     e.preventDefault();
 
     if (!title || !description) return;
-    await supabase.from('todo').update([{ title, description }]);
-
-    getSingleTodo();
+    await supabase
+      .from('todo')
+      .update({ title, description })
+      .eq('id', 'editTodo');
 
     setTimeout(() => {
       history.push('/dashboard');
-    }, 2000);
+    }, 1000);
+    getSingleTodo();
   };
 
   return (

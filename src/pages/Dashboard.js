@@ -21,6 +21,7 @@ const Dashboard = ({ history }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!title && !description) return;
     await supabase.from('todo').insert([{ title, description }]).single();
 
     setTitle('');
